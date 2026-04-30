@@ -2,142 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aliia Asangazieva — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliia Asangazieva | Business Analyst</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      padding: 70px 10%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #dbeafe;
+      margin-top: 10px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      background: white;
+      color: #1e3a8a;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 14px;
+    }
+
+    .project {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f8fafc;
+      border-left: 5px solid #1e3a8a;
+      border-radius: 10px;
+    }
+
+    .links a {
+      display: block;
+      margin: 10px 0;
+      color: #1e3a8a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #6b7280;
+    }
+  </style>
 </head>
+
 <body>
 
-  <nav>
-    <a class="nav-logo" href="#">Aliia Asangazieva</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header>
+  <h1>Aliia Asangazieva</h1>
+  <p>Business Analyst | Data & Technology</p>
 
-  <header id="home">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Business Analyst</div>
-      <h1>Aliia<br><em>Asangazieva</em></h1>
-      <p class="hero-sub">Bridging technology and data to drive smarter, more informed decisions.</p>
-      <div>
-        <a class="hero-cta" href="#projects">View Projects</a>
-        <a class="hero-cta-ghost" href="#contact">Contact Me</a>
-      </div>
+  <div class="buttons">
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Business Analyst student passionate about data, technology,
+    and building solutions that improve decision-making.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <div class="card">
+      <h3>Java</h3>
+      <p>OOP, Data Structures</p>
     </div>
-  </header>
 
-  <section id="about">
-    <div class="section-label fade-in"><span>01 — About</span></div>
-    <div class="about-layout fade-in">
-      <div class="about-card">
-        <div class="about-avatar">
-          <span class="avatar-initials">AA</span>
-        </div>
-        <div class="about-card-info">
-          <div class="about-card-name">Aliia Asangazieva</div>
-          <div class="about-card-role">Business Analyst</div>
-          <span class="about-card-tag">Penn State</span>
-          <span class="about-card-tag">Analytics</span>
-          <span class="about-card-tag">Technology</span>
-        </div>
-      </div>
-      <div class="about-text">
-        <p>Hi, I'm <strong>Aliia Asangazieva</strong>, a student at Penn State University interested in business analytics and technology.</p>
-        <p>I enjoy learning new skills and working on projects that sit at the intersection of data and decision-making.</p>
-      </div>
+    <div class="card">
+      <h3>SQL</h3>
+      <p>Queries, Database Design</p>
     </div>
-  </section>
 
-  <section id="skills">
-    <div class="section-label fade-in"><span>02 — Skills</span></div>
-    <div class="skills-grid fade-in">
-      <div class="skill-card">
-        <div class="skill-icon">☕</div>
-        <div class="skill-name">Java</div>
-        <div class="skill-desc">Object-oriented programming, data structures, algorithms</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🗄</div>
-        <div class="skill-name">SQL</div>
-        <div class="skill-desc">Relational databases, queries, schema design</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🔧</div>
-        <div class="skill-name">GitHub</div>
-        <div class="skill-desc">Version control, repositories, collaboration</div>
-      </div>
+    <div class="card">
+      <h3>GitHub</h3>
+      <p>Version Control</p>
     </div>
-  </section>
 
-  <section id="projects">
-    <div class="section-label fade-in"><span>03 — Projects</span></div>
-    <div class="project-card fade-in">
-      <div class="project-tag"><span class="project-dot"></span>Academic Project</div>
-      <h3>SQL Bookstore Database</h3>
-      <p>Designed and built a relational database for a bookstore, including tables for books, authors, customers, and orders. Used SQL to write queries for inventory tracking, sales reporting, and customer management.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">SQL</span>
-        <span class="tech-tag">Relational Database</span>
-        <span class="tech-tag">Schema Design</span>
-      </div>
+    <div class="card">
+      <h3>Analytics</h3>
+      <p>Data Analysis, Reporting</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <div class="section-label fade-in"><span>04 — Contact</span></div>
-    <div class="contact-layout fade-in">
-      <div>
-        <h3 class="contact-heading">Let's connect and build something great.</h3>
-        <p class="contact-sub">Whether you have a project idea, an opportunity, or just want to say hello — my inbox is open.</p>
-      </div>
-      <div class="contact-list">
-        <div class="contact-row">
-          <div class="contact-icon-box">✉</div>
-          <div>
-            <span class="contact-label">Email</span>
-            <a class="contact-val" href="mailto:p26245@psuca.edu">p26245@psuca.edu</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-icon-box">🎓</div>
-          <div>
-            <span class="contact-label">University</span>
-            <span class="contact-val">Penn State University</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-icon-box">💼</div>
-          <div>
-            <span class="contact-label">GitHub</span>
-            <a class="contact-val" href="https://github.com/asangazieva1" target="_blank">github.com/asangazieva1</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="projects">
+  <h2>Projects</h2>
 
-  <footer>
-    <p>© 2026 Aliia Asangazieva</p>
-    <p>Built with HTML & CSS<span class="footer-dot"></span>Hosted on GitHub Pages</p>
-  </footer>
+  <div class="project">
+    <h3>SQL Bookstore Database</h3>
+    <p>
+      Built a relational database for inventory tracking and reporting.
+    </p>
+  </div>
 
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(el => {
-        if (el.isIntersecting) { el.target.classList.add('visible'); observer.unobserve(el.target); }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+
+  <div class="links">
+    <a href="resume.pdf" target="_blank">📄 View Resume</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="links">
+    <a href="mailto:your-email@example.com">📧 Email</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/YOUR-GITHUB" target="_blank">💻 GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Aliia Asangazieva</p>
+</footer>
 
 </body>
 </html>
