@@ -19,7 +19,7 @@
     .card {
       background: white;
       padding: 60px 40px;
-      border-radius: 12px;
+      border-radius: 14px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
@@ -27,21 +27,37 @@
     h1 {
       margin-bottom: 30px;
       color: #0f2542;
+      font-size: 32px;
     }
 
-    .buttons a {
+    .btn {
       display: inline-block;
       background: #0074d9;
       color: white;
       text-decoration: none;
       padding: 14px 26px;
       margin: 10px;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: 0.3s;
     }
 
-    .buttons a:hover {
+    .btn:hover {
       background: #005fae;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 85%;
+        padding: 40px 20px;
+      }
+
+      .btn {
+        display: block;
+        width: 80%;
+        margin: 12px auto;
+      }
     }
   </style>
 </head>
@@ -51,11 +67,17 @@
   <div class="card">
     <h1>Aliia Asangazieva</h1>
 
-    <div class="buttons">
-      <a href="https://docs.google.com/document/d/1UjQWWARB8c6sTAokyk3MQsuWKwpJXbqlps2Ra9NVeY0/edit?usp=sharing" target="_blank">My Resume</a>
-      <a href="https://www.linkedin.com/in/aliia-asangazieva-236197331" target="_blank">LinkedIn</a>
-      <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>
-    </div>
+    <a class="btn" href="https://docs.google.com/document/d/1UjQWWARB8c6sTAokyk3MQsuWKwpJXbqlps2Ra9NVeY0/edit?usp=sharing" target="_blank">
+      My Resume
+    </a>
+
+    <a class="btn" href="https://www.linkedin.com/in/aliia-asangazieva-236197331" target="_blank">
+      LinkedIn
+    </a>
+
+    <a class="btn" href="https://github.com/asangazievaaliya-dotcom" target="_blank">
+      GitHub
+    </a>
 
   </div>
 
